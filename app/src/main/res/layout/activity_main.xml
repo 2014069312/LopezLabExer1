@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/marble"
+    tools:context="com.example.lopezlabexer1.MainActivity">
+
+
+    <TextView
+        android:id="@+id/tvLabel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="33dp"
+        android:fontFamily="casual"
+        android:text="Quiz 1"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/tvLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvLabel1"
+        android:layout_below="@+id/tvLabel1"
+        android:layout_marginTop="73dp"
+        android:fontFamily="casual"
+        android:text="Quiz 2"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLabel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvLabel2"
+        android:layout_below="@+id/tvLabel2"
+        android:layout_marginTop="62dp"
+        android:fontFamily="casual"
+        android:text="Seatworks"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLabel4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tvLabel3"
+        android:layout_below="@+id/tvLabel3"
+        android:layout_marginTop="61dp"
+        android:fontFamily="casual"
+        android:text="Lab Exercises"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvLabel5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/etMajorExam"
+        android:layout_alignStart="@+id/tvLabel4"
+        android:fontFamily="casual"
+        android:text="Major Exam"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnCompute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etMajorExam"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/white"
+        android:fontFamily="casual"
+        android:onClick="callComputationResults"
+        android:text="COMPUTE"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/etQuiz1"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvLabel2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp" />
+
+    <EditText
+        android:id="@+id/etQuiz2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvLabel2"
+        android:layout_alignStart="@+id/etQuiz1" />
+
+    <EditText
+        android:id="@+id/etSeatworks"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvLabel3"
+        android:layout_alignStart="@+id/etQuiz2" />
+
+    <EditText
+        android:id="@+id/etLabExercises"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvLabel4"
+        android:layout_alignStart="@+id/etSeatworks" />
+
+    <EditText
+        android:id="@+id/etMajorExam"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etLabExercises"
+        android:layout_alignStart="@+id/etLabExercises"
+        android:layout_marginTop="48dp" />
+
+
+</RelativeLayout>
